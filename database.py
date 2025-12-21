@@ -5,7 +5,7 @@ def connect_db():
         conn = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="sushant@458",  # Recommendation: Use environment variables for security
+            password="sushant***", # Enter your workbencha password 
             database="Music_playerDB"
         )
         if conn.is_connected():
@@ -14,4 +14,5 @@ def connect_db():
         return conn
     except mysql.connector.Error as err:
         print(f"Error: {err}")
+
         return None
